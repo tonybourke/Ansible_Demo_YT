@@ -1,0 +1,9 @@
+---
+- name: Build Testing
+  hosts: FABRIC
+  tasks:
+    - name: Make config with Jinja
+      ansible.builtin.template:
+        src: "{{ lookup('env','PWD') }}/templates/switch.j2"
+        dest: "{{ lookup('env','PWD') }}/configs/{{ inventory_hostname }}.cfg"
+        mode: "0644"

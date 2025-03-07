@@ -1,0 +1,53 @@
+global_options:
+  OSPF_area: 0
+  p2p_mtu: 1550
+  p2p_lo: loopback0
+  mgmt_vrf: MGMT
+  mgmt_gw: 172.20.20.1
+devices:
+  leaf1:
+    p2p:
+      - Ethernet3
+      - Ethernet4
+    loopbacks: 
+      loopback0: 10.100.100.11
+    mgmt: 172.20.20.11/24
+  leaf2:
+    p2p:
+      - Ethernet3
+      - Ethernet4
+    loopbacks:
+      loopback0: 10.100.100.12
+    mgmt: 172.20.20.12/24
+  leaf3:
+    p2p:
+      - Ethernet3
+      - Ethernet4
+    loopbacks:
+      loopback0: 10.100.100.13
+    mgmt: 172.20.20.13/24
+  leaf4:
+    p2p:
+      - Ethernet3
+      - Ethernet4
+    loopbacks:
+      loopback0: 10.100.100.14
+    mgmt: 172.20.20.14/24
+  spine1:
+    p2p: 
+      - Ethernet3
+      - Ethernet4
+      - Ethernet5
+      - Ethernet6
+    loopbacks:
+      loopback0: 10.100.100.101
+    mgmt: 172.20.20.101/24
+  spine2:
+    p2p:
+      - Ethernet3
+      - Ethernet4
+      - Ethernet5
+      - Ethernet6    
+    loopbacks:
+      loopback0: 10.100.100.102
+    mgmt: 172.20.20.102/24

@@ -1,0 +1,11 @@
+---
+- name: Add VLANs to device
+  hosts: switch1
+  tasks:
+    - name: Add VLAN 100
+      arista.eos.eos_vlans:
+        config:
+          - name: VLAN_100
+            vlan_id: 100
+            state: active
+        state: merged

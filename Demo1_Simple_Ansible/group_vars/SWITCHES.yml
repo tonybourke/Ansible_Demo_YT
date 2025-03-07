@@ -1,0 +1,18 @@
+vlans:
+  - vlan_id: 100
+    name: "DMZ"
+  - vlan_id: 200
+    name: "Internal"
+  - vlan_id: 300
+    name: "Biz"
+  - vlan_id: 400
+    name: "WiFi"
+users:
+  - name: automator
+    privilege: 15
+    role: "network-admin"
+    ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCUL118w+/CZbCkqd9R7VyNdhHuwXHcgL2ctnrPAGzmVfkSDx9+vrXmvmOSTW8ioaJmAref+J247LcGJ6SfA1F/sbvzSnh/D2+w8Aqjrv9URtrZg4iqcdfLCfi1Vn8dNQJoBPj3Hf9v36XebY5cZKCIfbdHwjIUu9tdr3NU2IgQB8rOyruQmCxPq5LPYv5I8BG8REOOrnv8//l4g36SdPgDeFlfoCS4hcVbubL8yZVjrss6j2IVkvL3z5JYgARZNM7DSbhTbWr7fDdTfx92xktFgycsobfXxDAW70bMOQvShEUHc2iPe9jgkyzTv7S0SmyZW9Grrx8VPBptgogd9dn7Vu1pyT/I15QHqsUpbBEbo6eVvZ/C0M06TjePwrKTM/BdnXLa1ozWgpKceF/AlhUaldQF74fNJ2IXPHECMZRafEhIPjLg0XdUdwMuuTsjCalsYzGLK63z7MbVI7bgeP1Zx44w0bdI19TKpHIQguGT8Ub+Pl37DPFdtvniBy9o00= tony@ansible-cn"
+  - name: arista
+    privilege: 15
+    role: "network-admin"
+    ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCUL118w+/CZbCkqd9R7VyNdhHuwXHcgL2ctnrPAGzmVfkSDx9+vrXmvmOSTW8ioaJmAref+J247LcGJ6SfA1F/sbvzSnh/D2+w8Aqjrv9URtrZg4iqcdfLCfi1Vn8dNQJoBPj3Hf9v36XebY5cZKCIfbdHwjIUu9tdr3NU2IgQB8rOyruQmCxPq5LPYv5I8BG8REOOrnv8//l4g36SdPgDeFlfoCS4hcVbubL8yZVjrss6j2IVkvL3z5JYgARZNM7DSbhTbWr7fDdTfx92xktFgycsobfXxDAW70bMOQvShEUHc2iPe9jgkyzTv7S0SmyZW9Grrx8VPBptgogd9dn7Vu1pyT/I15QHqsUpbBEbo6eVvZ/C0M06TjePwrKTM/BdnXLa1ozWgpKceF/AlhUaldQF74fNJ2IXPHECMZRafEhIPjLg0XdUdwMuuTsjCalsYzGLK63z7MbVI7bgeP1Zx44w0bdI19TKpHIQguGT8Ub+Pl37DPFdtvniBy9o00= tony@ansible-cn"
