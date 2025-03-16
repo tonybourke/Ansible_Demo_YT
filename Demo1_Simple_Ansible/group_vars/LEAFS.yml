@@ -1,0 +1,10 @@
+---
+vlans:
+  - name: "VLAN_100"
+    vlan_id: 100
+  - name: "VLAN_200"
+    vlan_id: 200
+  - name: "Biz"
+    vlan_id: 300
+  - name: "WiFi"
+    vlan_id: 400

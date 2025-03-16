@@ -4,6 +4,6 @@
   tasks:
     - name: Make config with Jinja
       ansible.builtin.template:
-        src: "{{ lookup('env','PWD') }}/templates/switch.j2"
-        dest: "{{ lookup('env','PWD') }}/configs/{{ inventory_hostname }}.cfg"
+        src: "{{ lookup( 'env', 'PWD' ) }}/configs/{{ inventory_hostname }}.cfg"
+        dest: "{{ lookup('env','PWD' ) }}/configs/{{ inventory_hostname }}.cfg"
         mode: "0644"

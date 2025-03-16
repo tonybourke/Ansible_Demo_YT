@@ -4,7 +4,7 @@
   tasks:
     - name: Deploy config via eAPI
       arista.eos.eos_config:
-        src: "{{ lookup('env','PWD') }}/configs/{{ inventory_hostname }}.cfg"
+        src: "{{ lookup( 'env', 'PWD' ) }}/configs/{{ inventory_hostname }}.cfg"
         save_when: always
         backup: true
         backup_options:

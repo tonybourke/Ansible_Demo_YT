@@ -4,11 +4,11 @@
   tasks:
     - name: Add SSH keys
       arista.eos.eos_user:
-          name: "{{ item.name }}"
-          sshkey: "{{ item.ssh_key }}"
-          state: present
+        name: "{{ item.name }}"
+        sshkey: "{{ item.ssh_key }}"
+        state: present
       loop: "{{ users }}"
-      loop_control: 
+      loop_control:
         label: "{{ item.name }}"
     - name: Add user
       arista.eos.eos_user:
@@ -18,6 +18,5 @@
         role: "{{ item.role }}"
         state: present
       loop: "{{ users }}"
-      loop_control: 
+      loop_control:
         label: "{{ item.name }}"
-

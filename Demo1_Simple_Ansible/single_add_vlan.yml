@@ -1,6 +1,6 @@
 ---
 - name: Add VLANs to device
-  hosts: switch1
+  hosts: LEAFS
   tasks:
     - name: Add VLAN 100
       arista.eos.eos_vlans:

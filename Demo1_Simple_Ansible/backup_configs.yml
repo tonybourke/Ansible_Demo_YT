@@ -1,0 +1,9 @@
+---
+- name: Backup running-config to local directory
+  hosts: all
+  tasks:
+    - name: Pull configs from devices and deposit into directory
+      arista.eos.eos_config:
+        backup: true
+        backup_options:
+          dir_path: "backup_configs"

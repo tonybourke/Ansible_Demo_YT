@@ -1,6 +1,6 @@
 ---
 - name: Add VLANs to device
-  hosts: switch1
+  hosts: LEAFS
   tasks:
     - name: Add VLANs
       arista.eos.eos_vlans:
@@ -10,4 +10,3 @@
             state: active
         state: merged
       loop: "{{ vlans }}"
-      
